@@ -18,6 +18,6 @@ text((min(bs) + 2 * max(bs))/3, max(cs)/2, 'седло','Color', 'white');
 xlabel('b');
 ylabel('c');
 set(h, 'EdgeColor', 'none');
-saveas(h,'m1_portret_types.png')
+saveas(h,'Images/m1_portret_types.png')
 end
 

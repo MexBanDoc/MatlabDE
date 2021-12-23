@@ -11,6 +11,6 @@ function plot_four_m2_cycles()
         plot_m2_cycle(a,bs(i),cs(i));
         disp(i)
     end
-    saveas(h,'four_cycles.png');
+    saveas(h,'Images/four_cycles.png');
 end
 

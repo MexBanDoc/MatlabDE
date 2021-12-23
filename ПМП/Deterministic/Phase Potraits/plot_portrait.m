@@ -16,6 +16,6 @@ function plot_portrait(a,b,c,number)
          text(m2(1)+0.1, m2(2)+0.1,'M_2');
      end
     hold('off');
-    saveas(h,['portret_',num2str(number),'.png'])
+    saveas(h,['Images/portret_',num2str(number),'.png'])
 end
 

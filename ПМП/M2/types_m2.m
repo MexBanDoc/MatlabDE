@@ -21,6 +21,6 @@ text(1.3, 0.05, 'неустойчивый фокус','Color', 'white','FontSize
 text(1.055, 0.01, 'неустойчивый узел','FontSize',8); 
 xlabel('b');
 ylabel('c');
-saveas(h,'m2_portret_types.png')
+saveas(h,'Images/m2_portret_types.png')
 end
 

@@ -16,5 +16,5 @@ function plot_stochastic_coords(a,b,c,h,eps,steps)
         ylabel(labels(i));
         hold('off');
     end
-    saveas(h,'stochastic_node_coords.png');
+    saveas(h,'Images/stochastic_node_coords.png');
 end

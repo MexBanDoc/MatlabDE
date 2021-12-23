@@ -18,6 +18,6 @@ function plot_stochastic_cycle_coords(a,b,c,h,eps,steps)
         ylabel(labels(i));
         hold('off');
     end
-    saveas(h,'stochastic_cycle_coords.png');
+    saveas(h,'Images/stochastic_cycle_coords.png');
 end
 

@@ -11,6 +11,6 @@ function plot_stochastic_m2(a,b,c,h,eps,steps)
     title(['Тректории стахостической системы с шумом ',num2str(eps)]);
     xlabel('x');
     ylabel('y');
-    saveas(h, 'stochastic_node.png');
+    saveas(h, 'Images/stochastic_node.png');
 end
 

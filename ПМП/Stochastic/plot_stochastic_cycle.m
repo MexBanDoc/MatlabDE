@@ -11,6 +11,6 @@ function plot_stochastic_cycle(a,b,c,h,eps,steps)
     plot(cycle(:,1),cycle(:,2),'LineWidth', 1.5);
     hold('off');
     title(['Траектории стахостической системы с шумом ',num2str(eps)]);
-    saveas(h,'stochastic_cycle_loud_2.png');
+    saveas(h,'Images/stochastic_cycle_loud_2.png');
 end
 
