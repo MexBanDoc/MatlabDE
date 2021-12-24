@@ -1,6 +1,4 @@
 function res = get_common_start_points()
-%GET_COMMON_START_POINTS Summary of this function goes here
-%   Detailed explanation goes here
 res=[];
 for i=3:5
     res=[res;[i,i]];

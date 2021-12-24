@@ -1,6 +1,4 @@
-function plot_stochastic_cycle_coords(a,b,c,h,eps,steps)
-%PLOT_STOCHASTIC_CYCLE_COORDS Summary of this function goes here
-%   Detailed explanation goes here
+function plot_stochastic_cycle_coords(a,b,c,h,eps,steps,name)
     m2=get_m2(a,b,c);
     point= find_m2_cycle_point(m2,a,b,c,0.001,2000);
     cycle=get_trace(point,a,b,c,steps,h);
@@ -18,6 +16,6 @@ function plot_stochastic_cycle_coords(a,b,c,h,eps,steps)
         ylabel(labels(i));
         hold('off');
     end
-    saveas(h,'Images/stochastic_cycle_coords.png');
+    saveas(h,['Images/',name]);
 end
 

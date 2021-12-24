@@ -1,6 +1,4 @@
 function num = get_portret_num(discr,trA)
-%GET_PORTRET_NUM Summary of this function goes here
-%   Detailed explanation goes here
 if discr < 0
     if abs(trA) < 1e-5
       num = 0;

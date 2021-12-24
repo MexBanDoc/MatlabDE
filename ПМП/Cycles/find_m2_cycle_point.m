@@ -1,6 +1,4 @@
 function x_p_1 = find_m2_cycle_point(m2,a,b,c,eps,steps)
-%FIND_M2_CYCLE_POINT Summary of this function goes here
-%   Detailed explanation goes here
     x_p=go_one_round(m2,a,b,c,m2+[0.02,0]);
     for i=1:steps
         x_p_1=go_one_round(m2,a,b,c,x_p);

@@ -30,5 +30,5 @@ function plot_sups()
     subplot(1,2,2);
     xlabel('b');
     ylabel('y');
-saveas(h, 'Images/sups.png');
+    saveas(h, 'Images/sups.png');
 end

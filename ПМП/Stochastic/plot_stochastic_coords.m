@@ -1,6 +1,4 @@
-function plot_stochastic_coords(a,b,c,h,eps,steps)
-%PLOT_STOCHASTIC_M2 Summary of this function goes here
-%   Detailed explanation goes here
+function plot_stochastic_coords(a,b,c,h,eps,steps,name)
     m2=get_m2(a,b,c);
     trace=get_stochastic_trace(m2+0.001,a,b,c,h,eps,steps);
     t=linspace(0,steps*h,steps);
@@ -16,5 +14,5 @@ function plot_stochastic_coords(a,b,c,h,eps,steps)
         ylabel(labels(i));
         hold('off');
     end
-    saveas(h,'Images/stochastic_node_coords.png');
+    saveas(h,['Images/',name]);
 end

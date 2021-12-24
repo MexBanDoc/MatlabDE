@@ -1,6 +1,4 @@
 function [l1,l2] = get_cov_matrix_singular(stoch_trace)
-%GET_COV_MATRIX_SINGULAR Summary of this function goes here
-%   Detailed explanation goes here
 xs = stoch_trace(:,1);
 ys = stoch_trace(:,2);
 

@@ -1,6 +1,4 @@
-function [] = plot_m2_cycle(a,b,c)
-%PLOT_M2_CYCLE Summary of this function goes here
-%   Detailed explanation goes here
+function plot_m2_cycle(a,b,c)
     m2=get_m2(a,b,c);
     cycle=get_m2_cycle(a,b,c,1e-3,0.001,1000);
     hold('on');

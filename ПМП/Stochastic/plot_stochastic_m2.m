@@ -1,6 +1,4 @@
-function plot_stochastic_m2(a,b,c,h,eps,steps)
-%PLOT_STOCHASTIC_M2 Summary of this function goes here
-%   Detailed explanation goes here
+function plot_stochastic_m2(a,b,c,h,eps,steps, name)
     m2=get_m2(a,b,c);
     trace=get_stochastic_trace(m2+0.001,a,b,c,h,eps,steps);
     h=figure();
@@ -11,6 +9,6 @@ function plot_stochastic_m2(a,b,c,h,eps,steps)
     title(['Тректории стахостической системы с шумом ',num2str(eps)]);
     xlabel('x');
     ylabel('y');
-    saveas(h, 'Images/stochastic_node.png');
+    saveas(h, ['Images/',name]);
 end
 

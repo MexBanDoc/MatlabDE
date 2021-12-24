@@ -1,6 +1,4 @@
 function fig = plot_coords_periods(a,b,c)
-%PLOT_PERIODS Summary of this function goes here
-%   Detailed explanation goes here
     h=1e-3;
     cycle=get_m2_cycle(a,b,c,h,h,1000);
     t=linspace(0, length(cycle)*h, length(cycle));
@@ -12,7 +10,6 @@ function fig = plot_coords_periods(a,b,c)
     title(['b=',num2str(b)]);
     xlabel('T');
     ylabel('Coordinates');
-%     legend('Location','northwest');
     legend('show');
 end
 

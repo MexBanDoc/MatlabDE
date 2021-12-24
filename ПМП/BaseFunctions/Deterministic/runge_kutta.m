@@ -1,6 +1,4 @@
 function s = runge_kutta(xy,a,b,c,h)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
     k_1 = h * get_v(xy,a,b,c);
     k_2 = h * get_v(xy + k_1 / 2,a,b,c);
     k_3 = h * get_v(xy + k_2 / 2,a,b,c);

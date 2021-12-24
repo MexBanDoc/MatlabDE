@@ -1,6 +1,5 @@
 function [mins, points, maxs] = get_sups(a, bs, c, steps)
-%GET_SUPS Summary of this function goes here
-%   Detailed explanation goes here
+
 mins = zeros(length(bs),2);
 points = zeros(length(bs),2);
 maxs = zeros(length(bs),2);

@@ -1,6 +1,4 @@
 function plot_portrait(a,b,c,number)
-%PLOT_PORTRAIT Summary of this function goes here
-%   Detailed explanation goes here
     m0=[0,0];
     m1=get_m1(a,b,c);
     m2=get_m2(a,b,c);

@@ -1,6 +1,4 @@
 function plot_cov(n)
-%PLOT_COV Summary of this function goes here
-%   Detailed explanation goes here
 a = 2;
 c = 0.1;
 
