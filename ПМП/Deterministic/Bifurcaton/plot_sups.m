@@ -6,7 +6,7 @@ function plot_sups()
     b3 = 2 / (1 - c) - 1;
     delta = 0.00001;
     cool_bs = [b1, b2, b3, b3 + 0.5];
-
+    h=figure();
     for i = 2:length(cool_bs)
         s = cool_bs(i - 1) + delta;
         e = cool_bs(i) - delta;
@@ -23,9 +23,12 @@ function plot_sups()
             plot(bs, maxs(:,k));
         end
     end
-
     hold("off");
-    %%TODO: ass%%
-%     title(['a=',num2str(a),', b=',num2str(b),', c=',num2str(c)]);
-%     xlabel('X coordinate');
-%     ylabel('Y coordinate');
+    subplot(1,2,1);
+    xlabel('b');
+    ylabel('x');
+    subplot(1,2,2);
+    xlabel('b');
+    ylabel('y');
+saveas(h, 'Images/sups.png');
+end

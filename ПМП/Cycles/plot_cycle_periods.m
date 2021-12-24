@@ -6,7 +6,7 @@ function fig = plot_cycle_periods(a,c,b_min,b_max,steps)
     h=0.001;
     fig=figure();
     for b = bs
-        cycle=get_m2_cycle(a,b,c,h,h,100);
+        cycle=get_m2_cycle(a,b,c,h,h,500);
         ts=[ts;length(cycle)*h];
     end
     plot(bs,ts);

@@ -27,7 +27,7 @@ end
 h=figure();
 hold on;
 ylim([-0.001,max(max(l2s),max(l1s))]);
-xlim([b1,b2]);
+xlim([,1.22]);
 plot(bs, l1s,'LineWidth',1.5);
 plot(bs, l2s,'LineWidth',1.5);
 
